@@ -10,7 +10,7 @@ let password = process.env.PASSWORD;
 
 app.set("port", process.env.PORT || 5000);
 
-app.get("/:nomeLista", function (req, res) {
+app.get("/:listName", function (req, res) {
   spauth
     .getAuth(`https://${process.env.DOMAIN}.sharepoint.com/sites/dev/`, {
       username: login,
