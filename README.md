@@ -6,6 +6,12 @@ Consumed content is returned in XML for external consumption.
 
 To use this application you must create an .env file in your repository and fill in the following parameters.
 
+That way you can consume sharepoint lists without having to be logged in.
+
+This application was developed using node-sp-auth. [Documentation can be found here.](https://github.com/s-KaiNet/node-sp-auth)
+
+In addition, I also use SharePoint's RESP API. [Documentation can be found here.](https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service?tabs=csom)
+
 ## :joystick: Running local
 
 Inside .env:
