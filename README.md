@@ -8,11 +8,19 @@ To use this application you must create an .env file in your repository and fill
 
 That way you can consume sharepoint lists without having to be logged in.
 
-This application was developed using node-sp-auth. [Documentation can be found here.](https://github.com/s-KaiNet/node-sp-auth)
+This application was developed using node-sp-auth.
+[Documentation can be found here.](https://github.com/s-KaiNet/node-sp-auth)
 
-In addition, I also use SharePoint's RESP API. [Documentation can be found here.](https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service?tabs=csom)
+In addition, I also use SharePoint's RESP API.
+[Documentation can be found here.](https://learn.microsoft.com/en-us/sharepoint/dev/sp-add-ins/get-to-know-the-sharepoint-rest-service?tabs=csom)
 
 ## :joystick: Running local
+
+First you will need node and npm installed on your machine.
+
+With the cloned repository use the `npm install` command to install the packages.
+
+Create a file .env on the root.
 
 Inside .env:
 
@@ -23,10 +31,22 @@ DOMAIN="The domain of your web site, you can find it inside the url of your shar
 PORT="Is used when hosting the API, for local or dev purposes you leave empty"
 ```
 
+Then, use the command on terminal
+
+```
+node index.js
+```
+
+The api will be available on port 5000. Therefore, you can access it through the url:
+
+```
+localhost:5000
+```
+
 ## :star: Passing name list has argument
 
 You can use the argument passed in the api to define which list will be accessed, as long as it is within the same website content.
 
 ```
-localhost:8000/'My list name'
+localhost:5000/'My list name'
 ```
